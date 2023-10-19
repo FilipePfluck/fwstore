@@ -34,7 +34,7 @@ export default defineConfig({
             value: '#FFFFFF',
           },
           primary: {
-            value: '#6E3188',
+            value: '#41327A',
           },
           primaryForeground: {
             value: '#FFFFFF',
@@ -64,7 +64,7 @@ export default defineConfig({
             value: '#FFFFFF',
           },
           border: {
-            value: '#171717',
+            value: '#2A2A2A',
           },
           input: {
             value: '#171717',
