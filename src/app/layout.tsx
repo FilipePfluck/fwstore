@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import { css, cx } from '../../styled-system/css'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +17,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={cx(
+          inter.className,
+          css({ minH: '100vh', minW: '100vw', bg: 'background' }),
+        )}
+      >
+        {children}
+      </body>
     </html>
   )
 }

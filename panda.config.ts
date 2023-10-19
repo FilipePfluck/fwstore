@@ -12,7 +12,69 @@ export default defineConfig({
 
   // Useful for theme customization
   theme: {
-    extend: {},
+    extend: {
+      tokens: {
+        colors: {
+          background: {
+            value: '#0A0A0A',
+          },
+          foreground: {
+            value: '#FFFFFF',
+          },
+          card: {
+            value: '#0A0A0A',
+          },
+          cardForeground: {
+            value: '#FFFFFF',
+          },
+          popover: {
+            value: '#0A0A0A',
+          },
+          popoverForeground: {
+            value: '#FFFFFF',
+          },
+          primary: {
+            value: '#6E3188',
+          },
+          primaryForeground: {
+            value: '#FFFFFF',
+          },
+          secondary: {
+            value: '#171717',
+          },
+          secondaryForeground: {
+            value: '#FFFFFF',
+          },
+          muted: {
+            value: '#171717',
+          },
+          mutedForeground: {
+            value: '#96A2A5',
+          },
+          accent: {
+            value: '#171717',
+          },
+          accentForeground: {
+            value: '#FFFFFF',
+          },
+          destructive: {
+            value: '#371515',
+          },
+          destructiveForeground: {
+            value: '#FFFFFF',
+          },
+          border: {
+            value: '#171717',
+          },
+          input: {
+            value: '#171717',
+          },
+          ring: {
+            value: '#9DD6D6',
+          },
+        },
+      },
+    },
   },
 
   jsxFramework: 'react',
