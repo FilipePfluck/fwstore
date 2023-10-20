@@ -1643,6 +1643,10 @@ const tokens = {
     "value": "#FFFFFF",
     "variable": "var(--colors-foreground)"
   },
+  "colors.foregroundSubtle": {
+    "value": "#EBEBEB",
+    "variable": "var(--colors-foreground-subtle)"
+  },
   "colors.card": {
     "value": "#0A0A0A",
     "variable": "var(--colors-card)"

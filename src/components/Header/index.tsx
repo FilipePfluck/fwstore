@@ -9,23 +9,23 @@ import { Navbar } from '../Navbar'
 
 export const Header = () => {
   return (
-    <S.HeaderContainer>
-      <ArkDialog.Root>
+    <ArkDialog.Root>
+      <S.HeaderContainer>
         <ArkDialog.Trigger asChild>
           <IconButton aria-label="navigation menu">
             <MenuIcon />
           </IconButton>
         </ArkDialog.Trigger>
-        <Navbar />
-      </ArkDialog.Root>
 
-      <S.Title>
-        <span className={css({ color: 'primary' })}>FSW</span> Store
-      </S.Title>
+        <S.Title>
+          <span className={css({ color: 'primary' })}>FSW</span> Store
+        </S.Title>
 
-      <IconButton aria-label="navigation menu">
-        <ShoppingCartIcon />
-      </IconButton>
-    </S.HeaderContainer>
+        <IconButton aria-label="navigation menu">
+          <ShoppingCartIcon />
+        </IconButton>
+      </S.HeaderContainer>
+      <Navbar />
+    </ArkDialog.Root>
   )
 }

@@ -21,6 +21,9 @@ export default defineConfig({
           foreground: {
             value: '#FFFFFF',
           },
+          foregroundSubtle: {
+            value: '#EBEBEB',
+          },
           card: {
             value: '#0A0A0A',
           },

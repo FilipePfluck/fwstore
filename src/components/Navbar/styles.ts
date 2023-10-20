@@ -39,3 +39,35 @@ const navItemStyles = cva({
 export const NavButton = styled('button', navItemStyles)
 
 export const NavLink = styled(Link, navItemStyles)
+
+export const UserInfoContainer = styled(
+  'div',
+  cva({
+    base: {
+      py: '4',
+      mb: '2',
+      display: 'flex',
+      gap: '2',
+      borderBottom: '1px solid token(colors.border)',
+    },
+  }),
+)
+
+export const Name = styled(
+  'p',
+  cva({
+    base: {
+      fontWeight: 'semibold',
+    },
+  }),
+)
+
+export const Welcome = styled(
+  'p',
+  cva({
+    base: {
+      fontSize: '14px',
+      color: 'foregroundSubtle',
+    },
+  }),
+)
