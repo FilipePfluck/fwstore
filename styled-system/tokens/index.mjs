@@ -651,22 +651,6 @@ const tokens = {
     "value": "1536px",
     "variable": "var(--sizes-breakpoint-2xl)"
   },
-  "animations.spin": {
-    "value": "spin 1s linear infinite",
-    "variable": "var(--animations-spin)"
-  },
-  "animations.ping": {
-    "value": "ping 1s cubic-bezier(0, 0, 0.2, 1) infinite",
-    "variable": "var(--animations-ping)"
-  },
-  "animations.pulse": {
-    "value": "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
-    "variable": "var(--animations-pulse)"
-  },
-  "animations.bounce": {
-    "value": "bounce 1s infinite",
-    "variable": "var(--animations-bounce)"
-  },
   "colors.current": {
     "value": "currentColor",
     "variable": "var(--colors-current)"
@@ -1687,6 +1671,10 @@ const tokens = {
     "value": "#171717",
     "variable": "var(--colors-secondary)"
   },
+  "colors.secondaryHover": {
+    "value": "#191919",
+    "variable": "var(--colors-secondary-hover)"
+  },
   "colors.secondaryForeground": {
     "value": "#FFFFFF",
     "variable": "var(--colors-secondary-foreground)"
@@ -1726,6 +1714,30 @@ const tokens = {
   "colors.ring": {
     "value": "#9DD6D6",
     "variable": "var(--colors-ring)"
+  },
+  "animations.spin": {
+    "value": "spin 1s linear infinite",
+    "variable": "var(--animations-spin)"
+  },
+  "animations.ping": {
+    "value": "ping 1s cubic-bezier(0, 0, 0.2, 1) infinite",
+    "variable": "var(--animations-ping)"
+  },
+  "animations.pulse": {
+    "value": "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+    "variable": "var(--animations-pulse)"
+  },
+  "animations.bounce": {
+    "value": "bounce 1s infinite",
+    "variable": "var(--animations-bounce)"
+  },
+  "animations.drawerSlideIn": {
+    "value": "drawerSlideIn 0.3s ease-out",
+    "variable": "var(--animations-drawer-slide-in)"
+  },
+  "animations.drawerSlideOut": {
+    "value": "drawerSlideOut 0.3s ease-in",
+    "variable": "var(--animations-drawer-slide-out)"
   },
   "breakpoints.sm": {
     "value": "640px",

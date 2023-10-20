@@ -163,10 +163,6 @@
   --sizes-breakpoint-lg: 1024px;
   --sizes-breakpoint-xl: 1280px;
   --sizes-breakpoint-2xl: 1536px;
-  --animations-spin: spin 1s linear infinite;
-  --animations-ping: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
-  --animations-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-  --animations-bounce: bounce 1s infinite;
   --colors-current: currentColor;
   --colors-black: #000;
   --colors-white: #fff;
@@ -422,6 +418,7 @@
   --colors-primary: #41327A;
   --colors-primary-foreground: #FFFFFF;
   --colors-secondary: #171717;
+  --colors-secondary-hover: #191919;
   --colors-secondary-foreground: #FFFFFF;
   --colors-muted: #171717;
   --colors-muted-foreground: #96A2A5;
@@ -432,6 +429,12 @@
   --colors-border: #2A2A2A;
   --colors-input: #171717;
   --colors-ring: #9DD6D6;
+  --animations-spin: spin 1s linear infinite;
+  --animations-ping: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  --animations-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animations-bounce: bounce 1s infinite;
+  --animations-drawer-slide-in: drawerSlideIn 0.3s ease-out;
+  --animations-drawer-slide-out: drawerSlideOut 0.3s ease-in;
   --breakpoints-sm: 640px;
   --breakpoints-md: 768px;
   --breakpoints-lg: 1024px;

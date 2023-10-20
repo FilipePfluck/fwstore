@@ -42,6 +42,9 @@ export default defineConfig({
           secondary: {
             value: '#171717',
           },
+          secondaryHover: {
+            value: '#191919',
+          },
           secondaryForeground: {
             value: '#FFFFFF',
           },
@@ -72,6 +75,20 @@ export default defineConfig({
           ring: {
             value: '#9DD6D6',
           },
+        },
+        animations: {
+          drawerSlideIn: { value: 'drawerSlideIn 0.3s ease-out' },
+          drawerSlideOut: { value: 'drawerSlideOut 0.3s ease-in' },
+        },
+      },
+      keyframes: {
+        drawerSlideIn: {
+          '0%': { transform: 'translateX(-80vw)' },
+          '100%': { transform: 'translateX(0px)' },
+        },
+        drawerSlideOut: {
+          '0%': { transform: 'translateX(0px)' },
+          '100%': { transform: 'translateX(-80vw)' },
         },
       },
     },
