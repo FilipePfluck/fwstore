@@ -27,6 +27,9 @@ export default function RootLayout({
             minW: '100vw',
             bg: 'background',
             color: 'foreground',
+            _scrollbar: {
+              display: 'none',
+            },
           }),
         )}
       >

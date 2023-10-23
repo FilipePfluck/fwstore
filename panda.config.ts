@@ -37,7 +37,7 @@ export default defineConfig({
             value: '#FFFFFF',
           },
           primary: {
-            value: '#41327A',
+            value: '#5033C3',
           },
           primaryForeground: {
             value: '#FFFFFF',
@@ -55,7 +55,7 @@ export default defineConfig({
             value: '#171717',
           },
           mutedForeground: {
-            value: '#96A2A5',
+            value: '#676767',
           },
           accent: {
             value: '#171717',

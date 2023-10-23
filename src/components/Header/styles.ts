@@ -6,6 +6,7 @@ export const HeaderContainer = styled(
   cva({
     base: {
       display: 'flex',
+      alignItems: 'center',
       justifyContent: 'space-between',
       p: '6',
       w: 'full',

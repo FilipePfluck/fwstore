@@ -1664,7 +1664,7 @@ const tokens = {
     "variable": "var(--colors-popover-foreground)"
   },
   "colors.primary": {
-    "value": "#41327A",
+    "value": "#5033C3",
     "variable": "var(--colors-primary)"
   },
   "colors.primaryForeground": {
@@ -1688,7 +1688,7 @@ const tokens = {
     "variable": "var(--colors-muted)"
   },
   "colors.mutedForeground": {
-    "value": "#96A2A5",
+    "value": "#676767",
     "variable": "var(--colors-muted-foreground)"
   },
   "colors.accent": {
