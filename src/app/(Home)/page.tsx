@@ -1,5 +1,3 @@
-'use client'
-
 import Image from 'next/image'
 
 import * as S from './styles'
@@ -7,8 +5,33 @@ import { Box } from '../../../styled-system/jsx'
 import { Badges } from './Badges'
 import { ProductsList } from '@/components/ProductsList'
 import { Footer } from '@/components/Footer'
+import { prismaClient } from '@/lib/prisma'
 
-export default function Home() {
+export default async function Home() {
+  const deals = await prismaClient.product.findMany({
+    where: {
+      discountPercentage: {
+        gt: 0,
+      },
+    },
+  })
+
+  const keyboards = await prismaClient.product.findMany({
+    where: {
+      category: {
+        slug: 'keyboards',
+      },
+    },
+  })
+
+  const mouses = await prismaClient.product.findMany({
+    where: {
+      category: {
+        slug: 'mouses',
+      },
+    },
+  })
+
   return (
     <>
       <S.PageContent>
@@ -21,7 +44,7 @@ export default function Home() {
           />
         </Box>
         <Badges />
-        <ProductsList />
+        <ProductsList products={deals} title="OFERTAS" />
         <Box px="5">
           <Image
             src="/banner-2.png"
@@ -30,7 +53,7 @@ export default function Home() {
             height={300}
           />
         </Box>
-        <ProductsList />
+        <ProductsList products={keyboards} title="TECLADOS" />
         <Box px="5">
           <Image
             src="/banner-3.png"
@@ -39,7 +62,7 @@ export default function Home() {
             height={300}
           />
         </Box>
-        <ProductsList />
+        <ProductsList products={mouses} title="MOUSES" />
       </S.PageContent>
       <Footer />
     </>

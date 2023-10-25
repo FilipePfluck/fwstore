@@ -74,3 +74,13 @@ export const ProductOriginalPrice = styled(
     },
   }),
 )
+
+export const AmountOfRatings = styled(
+  'p',
+  cva({
+    base: {
+      color: 'mutedForeground',
+      fontSize: '12px',
+    },
+  }),
+)
